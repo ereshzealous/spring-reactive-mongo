@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: spring-mongo
+  main:
+    allow-bean-definition-overriding: true
+  data:
+    mongodb:
+      database: library
+      host: localhost
+      port: 27017
+
+
+server:
+  port: 9011
+
+logging:
+  level:
+    org.springframework.data:
+      mongodb:
+        core:
+          ReactiveMongoTemplate: DEBUG
+          MongoTemplate: DEBUG
+
+
